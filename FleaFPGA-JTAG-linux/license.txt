@@ -1,0 +1,3 @@
+NOTE: It is recommended to un-install previous versions first.
+
+FleaFPGA-JTAG license information goes here.
