@@ -32,7 +32,7 @@ When an ".XCF" file is processed it will produce a ".VME" file which is used to 
 
 The FleaFPGA-JTAG utility associates itself with ".XCF" and ".VME" files so these can usually be double-clicked on directly from Windows Explorer.  You can right-click for some additional options.
 
-It is also possible to configure Lattice Diamond to associate ".XCF" files with FleaFPGA-JTAG and then it is very convienient to double-click on the XCF file in your Diamond project to program the FleaFPGA board.  To do this add a Diamond Programmer ".XCF" file and then right-click on it to select "Open with..." (and use "Open with..." to invoke Diamond programmer when desired if FleaFPGA-JTAG is set to the default).  This process is outlined in more detail in the FleaFPGA Quickstart Guide.
+It is also possible to configure Lattice Diamond to associate ".XCF" files with FleaFPGA-JTAG and then it is very convenient to double-click on the XCF file in your Diamond project to program the FleaFPGA board.  To do this add a Diamond Programmer ".XCF" file and then right-click on it to select "Open with..." (and use "Open with..." to invoke Diamond programmer when desired if FleaFPGA-JTAG is set to the default).  This process is outlined in more detail in the FleaFPGA Quickstart Guide.
 
 You can select "Modify FleaFPGA-JTAG Setting" from the "FleaFPGA-JTAG" start menu entry to edit a file with advanced configuration settings for FleaFPGA-JTAG.  When editing this file avoid adding any extra tabs or quotes as the options are read "as is" directly by FleaFPGA-JTAG utility (spaces and all).
 
@@ -72,7 +72,7 @@ The "-p" mode slows down the bit-rate and extends timeout options for trouble-sh
 
 The "-v" option will "spam" you with all the details of the JTAG communication. :-)
 
-The "-w" option can be used when invoking FleaFPGA-JTAG from the commmand line and causes it to write the selected options to the default options file.
+The "-w" option can be used when invoking FleaFPGA-JTAG from the command line and causes it to write the selected options to the default options file.
 
 The "-a" mode will attempt to stay running and automatically re-program the FleaFPGA board when it detects the bitstream file is modified (e.g. re-synthesized).  This mode is experimental and can sometimes cause a spurious error (but generally works OK).
 
