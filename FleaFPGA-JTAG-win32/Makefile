@@ -1,6 +1,9 @@
-# cygwin makefile for FleaFPGA-JTAG utility
+# Cygwin makefile for FleaFPGA-JTAG utility
 
-CC		= i686-pc-mingw32-gcc
+PREFIX	= i686-w64-mingw32
+CC		= $(PREFIX)-gcc
+STRIP	= $(PREFIX)-strip
+WINDRES	= $(PREFIX)-windres
 CFLAGS	= -O2 -g -Wall -Wshadow -Wextra
 # CFLAGS += -DVME_DEBUG
 LFLAGS	= -L.
@@ -14,12 +17,12 @@ OBJ = $(SRC:.c=.o) icon.res
 
 FleaFPGA-JTAG: $(OBJ)
 	$(CC) $(LFLAGS) $^ $(LIBS) -o $@
-	strip -S $@
+	$(STRIP) -S $@
 
 $(OBJ): $(INC)
 
 icon.res: flea_logo.ico icon.rc
-	windres icon.rc -O coff -F pe-i386 -o icon.res
+	$(WINDRES) icon.rc -O coff -F pe-i386 -o icon.res
 
 all: clean FleaFPGA-JTAG
 

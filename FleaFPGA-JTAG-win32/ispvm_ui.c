@@ -1360,9 +1360,9 @@ reprocess:
 
 		while (gAutomatic)
 		{
-			struct _stat o_stat;
-			struct _stat n_stat;
-			struct _stat nn_stat;
+			struct stat o_stat;
+			struct stat n_stat;
+			struct stat nn_stat;
 			uint32_t twiddle = 0;
 			int ready = 0;
 			static char twid[] = "|/-\\|/-\\";

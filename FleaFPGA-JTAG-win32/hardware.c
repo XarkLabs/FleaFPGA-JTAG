@@ -33,7 +33,7 @@
 
 #define STR1(x) #x
 #define STR(x) STR1(x)
-#define	FT_CHECK(x)	(ftdi_status = (x), (ftdi_status == FT_OK ? 0 : printf("FTDI: %s returned %d in %s:%d\n", STR(x), (int32_t)ftdi_status, __FUNCTION__, __LINE__)), ftdi_status)
+#define	FT_CHECK(x)	do { ftdi_status = (x); if (ftdi_status != FT_OK) printf("FTDI: %s returned %d in %s:%d\n", STR(x), (int32_t)ftdi_status, __FUNCTION__, __LINE__); } while (0)
 
 /********************************************************************************
 * Declaration of global variables 
