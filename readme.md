@@ -6,6 +6,6 @@ This is the source code for the FleaFPGA-JTAG utility used to program the MachXO
 
 For a full tutorial, please see the FleaFPGA Quickstart Guide for your FleaFPGA board.
 
-Update: Pre-built Windows installer now present:
+Update: Pre-built Windows installer now present here:
 
-[a relative link](FleaFPGA-JTAG-win32/Output/FleaFPGA-JTAG-Setup.exe)
+[FleaFPGA-JTAG-win32/Output/FleaFPGA-JTAG-Setup.exe](FleaFPGA-JTAG-win32/Output/FleaFPGA-JTAG-Setup.exe)
